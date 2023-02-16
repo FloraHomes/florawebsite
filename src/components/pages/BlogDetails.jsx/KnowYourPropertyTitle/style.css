@@ -1,0 +1,12 @@
+ul.first-ul > li, ul.second-ul > li,
+ul.third-ul > li,ul.fourth-ul > li{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.fourth-ul-inner{
+    padding: 20px 0;
+}
+.fourth-ul-inner li{
+    font-size: 16px;
+}

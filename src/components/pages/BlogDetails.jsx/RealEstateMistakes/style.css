@@ -1,0 +1,28 @@
+p {
+  color: #111111;
+}
+
+.first-inv__li {
+  height: auto;
+}
+.container {
+  margin: 0 !important;
+}
+
+.first-inv__li li.first-inv--item {
+  padding-left: 35px !important;
+}
+@media only screen and (min-width: 700px) {
+  .mob_view {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .row-block {
+    display: none;
+  }
+  .mob_view {
+    display: inline-block;
+  }
+}

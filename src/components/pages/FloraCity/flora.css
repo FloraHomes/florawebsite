@@ -1,0 +1,568 @@
+
+@font-face {
+font-family: "Candara";
+src: local("Candara"),
+ url("../../assets/fonts/Candara-Font.ttf") format("truetype");
+}
+
+.custom-size-heading{
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+}
+
+.heading-container-ecopolis {
+  text-align: center;
+  padding: 20px 0;
+}
+.heading-container-ecopolis h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Raleway";
+  margin-bottom: 10px;
+}
+.heading-container-ecopolis h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Raleway";
+}
+
+.yellow-text {
+  font-size: 14px;
+}
+
+.custom-size-welcome{
+  font-size: 30px;
+}
+
+.subplan-info {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subplan-desc {
+  padding: 10px;
+  text-align: center;
+}
+
+.images-gallery {
+  text-align: center;
+}
+
+.images-gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images-gallery-container img {
+  height: 350px;
+  width: 50%;
+  padding: 15px;
+}
+.nested-ul-alphabets {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.text-note {
+  font-weight: normal !important;
+  font-size: 16px !important;
+  text-align: left !important;
+  margin-top: 0px!important;
+}
+
+.flora-list-orange {
+  position: relative;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fafafa;
+}
+.flora-list-orange li {
+  position: relative;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 400;
+  padding-left: 35px;
+  margin-bottom: 20px;
+}
+.flora-list-orange li::before {
+  position: absolute;
+    left: 10px;
+    top: 0;
+    font-size: 16px;
+    line-height: 30px;
+    content: "\52";
+    font-family: 'ElegantIcons';
+    color: #ed6c11!important;
+}
+@media screen and (max-width: 700px) {
+  .images-gallery-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .images-gallery-container img {
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .heading-container-ecopolis h1 {
+    padding: 0 15px;
+    line-height: 1em;
+    font-size: 33px;
+    font-weight: 800;
+    font-family: "Raleway";
+  }
+  .heading-container-ecopolis h2 {
+    padding: 0 15px;
+    line-height: 1.5em;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "Raleway";
+  }
+}
+.call-enquiry {
+  margin: 15px auto;
+  color: #541484;
+}
+.call-enquiry-first {
+  text-align: center;
+  color: #ffff;
+  /* background-color: #541484; */
+}
+
+/* @media only screen and (max-width: 700px) {
+  .accordion-box li {
+    display: visible !important;
+  }
+} */
+
+
+
+
+
+/* Styles of Flora images component */
+
+.homes-main-container {
+ display: flex;
+ margin-top: 20px;
+justify-content: center;
+border-bottom: 10px solid #448414;
+}
+.homes-details-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.details-bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details-bottom-container h1{
+  font-family: "Candara";
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.big-font-label{
+  font-size:55px
+}
+
+.hr-green {
+  display: inline-block;
+  text-align: center;
+}
+
+
+.heading-top-paragraph{
+  font-size: 15px;
+  width: 50%;
+  text-align: center;
+  font-family: "Candara";
+  padding: 10px;
+
+}
+.heading-top-paragraph:before {
+  content: '';
+  display: block;
+  border-top: 8px solid #98b285;
+}
+.details-bottom-container h3{
+  font-weight: bold;
+  font-size: 20px;
+  width: 80%;
+  font-family: "Candara";
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list-container{
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-evenly;
+}
+.li-style{
+  border-bottom: 1px dashed #dddddd !important;
+  padding-bottom: 7px;
+  margin-bottom: 7px !important;
+}
+
+.mobile-ul{
+  display: none;
+}
+
+.bottom-row {
+  display: flex;
+  font-family: "Candara";
+  margin-top: 30px;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.price-text{
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.detail-list-eco li {
+margin-bottom: 20px !important;
+}
+.detail-list-eco li:after {
+  content: '';
+  display: block;
+  border-top: 8px solid #98b285;
+  margin-top: 20px !important;
+  padding: 0 !important;
+}
+.detail-list-eco li:last-child:after {
+ display: none
+}
+.white-hr {
+  opacity: 1;
+  border-top: 8px solid #ffffff;
+}
+
+.no-margin {
+ padding: 5px;
+  border: 6px solid #98b285;
+}
+.no-margin li{
+  margin-bottom: 0px !important;
+}
+.no-margin li:after {
+  content: '';
+  display: block;
+  margin-top: 0px !important;
+
+  border-top: none !important;
+}
+.paragraph-color-align p{
+text-align: left;}
+
+
+@media screen and (max-width: 900px) {
+  .homes-details-container{
+    width: 90%;
+  }
+  .details-bottom-container h1{
+    font-size: 40px;
+  }
+  .big-font-label{
+    font-size:50px
+  }
+  .heading-top-paragraph{
+    font-size: 13px;
+    width: 70%;
+  }
+
+  .details-bottom-container h3{
+    font-size: 18px; 
+  }
+
+  
+}
+
+@media screen and (max-width: 700px) {
+  .list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .list-divider{
+    display: none !important;
+  }
+  .display-none{
+    display: none;
+  }
+  .mobile-ul {
+    display: block;
+  }
+  .bottom-row p{
+    font-size: 14px;
+  }
+  .price-text {
+    font-size: 25px !important;
+  }
+  
+}
+
+@media screen and (max-width: 550px) {
+
+  .homes-details-container{
+    width: 97%;
+  }
+  .details-bottom-container h1{
+    font-size: 20px;
+  }
+  .big-font-label{
+    font-size:23px
+  }
+  .heading-top-paragraph{
+    font-size: 13px;
+    width: 90%;
+  }
+
+  .details-bottom-container h3{
+    font-size: 16px; 
+    width: 90%;
+  }
+
+  .bottom-row{
+    display: block !important;
+  }
+  .price-text{
+    font-size: 26px;
+    padding-bottom: 0px;
+  }
+  .bottom-row p {
+    text-align: center;
+  }
+  .faq-heading{
+    font-size: 20px;
+  }
+  .yellow-text {
+    font-size: 12px;
+  }
+  .modal-heading-h4{
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+
+.list-style-one {
+  position: relative;
+}
+
+.list-style-one li {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+  padding-left: 35px;
+}
+
+.list-style-one > li:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  content: "R";
+  font-family: "ElegantIcons";
+  color: #448414;
+}
+
+.nested-ul > li:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  content: "W";
+  font-family: "ElegantIcons";
+  color: #448414;
+}
+.nested-ul li ul > li:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  content: "^";
+  font-family: "ElegantIcons";
+  color: #448414;
+}
+
+.inline-button{
+  margin-left: 10px;
+  background-color: #ed6c11;
+  padding: 5px;
+  border-radius: 15%;
+}
+
+.inline-button strong{
+  color: #ffffff;
+}
+
+
+
+
+
+/* Accordion Styles */
+
+.accordion-button {
+  display: flex;
+  justify-content: center;
+  background-color: #98b285 !important;
+  padding: 5px !important;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  color: #ffffff !important;
+
+  line-height: 30px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: #98b285 !important;
+
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #98b285 !important;
+
+}
+
+.accordion-button::after{
+  background-image: url("../../assets/angle-down-solid-white.svg") !important;
+
+}
+
+.accordion-item {
+  background-color: #fff;
+
+  margin-bottom: 15px;
+}
+div.collapse.show {
+    height: fit-content !important}
+
+    .accordion-button:not(.collapsed)::after {
+      background-image: url("../../assets/angle-down-solid-white.svg") !important;
+  }
+
+
+
+  /* FAQ ACCORDION */
+
+.faq-accordion .accordion-button {
+  display: flex;
+  justify-content: center;
+  background-color: #541484 !important;
+  padding: 5px !important;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  color: #ffffff !important;
+  line-height: 30px;
+}
+
+.faq-accordion .accordion-button:focus {
+  box-shadow: none;
+  background-color: #541484;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  background-color: #541484 !important;
+}
+
+.faq-accordion .accordion-button::after{
+  background-image: url("../../assets/angle-down-solid-white.svg") !important;
+
+}
+
+.faq-accordion .accordion-item {
+  border : 0px !important;
+
+  margin-bottom: 15px;
+}
+div.collapse.show {
+    height: fit-content !important}
+
+    .faq-accordion .accordion-button:not(.collapsed)::after {
+      background-image: url("../../assets/angle-down-solid-white.svg") !important;
+  }
+
+
+  .faq-heading{
+    margin-bottom: 15px;
+  }
+
+
+
+  .modal-backdrop {
+    /* bug fix - no overlay */    
+    display: none !important;    
+}
+  
+.modal-open .modal {
+  display: block;
+  overflow: auto;
+
+}
+
+
+.header-modal {
+  background-color: #541484;
+}
+
+.modal-content-flora-modal{
+  margin-top: 300px;
+}
+
+
+@media screen and (max-height: 500px){
+  .homes-details-container{
+    width: 97%;
+  }
+  .details-bottom-container h1{
+    font-size: 20px;
+  }
+  .big-font-label{
+    font-size:23px
+  }
+  .heading-top-paragraph{
+    font-size: 13px;
+    width: 90%;
+  }
+
+  .details-bottom-container h3{
+    font-size: 16px; 
+    width: 90%;
+  }
+
+  .bottom-row{
+    display: block !important;
+  }
+  .price-text{
+    font-size: 26px;
+    padding-bottom: 0px;
+  }
+  .bottom-row p {
+    text-align: center;
+  }
+  .faq-heading{
+    font-size: 20px;
+  }
+  .yellow-text {
+    font-size: 12px;
+  }
+  .modal-content-flora-modal{
+    margin-top: 400px !important;
+  }
+  
+}
+
+@media screen and (min-width: 700px) and (max-width: 986px){
+.optin-root {
+    margin-top: 0px !important;
+}}

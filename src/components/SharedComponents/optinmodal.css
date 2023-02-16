@@ -1,0 +1,89 @@
+.contact-form .form-group input[type="text"],
+.contact-form .form-group input[type="email"],
+.contact-form .form-group input[type="url"],
+.contact-form .form-group textarea,
+.contact-form .form-group select {
+  line-height: 32px;
+  padding: 0px 11px;
+  border: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
+  font-weight: 400;
+  height: 40px !important;
+  transition: all 300ms ease;
+}
+
+.modal-root {
+  margin-top: 300px;
+}
+#exec .modal-root {
+  margin-top: 200px !important;
+}
+#optinForm .modal-root {
+  margin-top: 100px !important;
+}
+#client_eng .modal-root {
+  margin-top: 400px !important;
+}
+#bookOptin .modal-root .modal-content {
+  margin-top: -150px;
+}
+/* @media screen and (max-width: 992px) and (min-width: 700px) {
+  .modal-root {
+    margin-top: 50px !important;
+  }
+} */
+
+/* @media screen and (max-width: 992px) and (min-width: 700px) {
+  .modal-root {
+    margin-top: 150px !important;
+  }
+} */
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  #bookOptin .modal-root .modal-content {
+    margin-top: 155px;
+  }
+  #exec .modal-root {
+    margin-top: 400px !important;
+  }
+  #own .modal-root {
+    margin-top: 550px !important;
+  }
+  #client_eng .modal-root {
+    margin-top: 800px !important;
+  }
+  #optinForm .modal-root {
+    margin-top: 120px !important;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .padding-top-custom{
+    padding-top: 200px !important;
+  }
+
+}
+@media screen and (max-width:478px) {
+  .padding-top-custom{
+    padding-top: 100px;
+  }
+
+}
+@media screen and (max-width:380px) {
+  .padding-top-custom{
+    padding-top: 340px !important;
+  }
+
+}
+@media screen and (max-width:360px) {
+  .padding-top-custom{
+    padding-top: 360px !important;
+  }
+
+}
+@media screen and (max-width:325px) {
+  .padding-top-custom{
+    padding-top: 410px !important;
+  }
+
+}
