@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import tawkTo from "tawkto-react";
 import "./style.css";
 import partner from "../../assets/partner2.jpg";
-import price from "../../assets/price.png";
 import customer1 from "../../assets/customers/1.png";
 import customer2 from "../../assets/customers/2.png";
 import customer3 from "../../assets/customers/3.png";
@@ -634,7 +633,7 @@ const Verification = () => {
                 id="verification-img-v"
                 className="verification-image"
                 src={verificationImage}
-                alt="Verification Image"
+                alt="Verification"
               />
             </div>
             <br />

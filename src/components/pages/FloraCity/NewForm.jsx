@@ -1,11 +1,9 @@
 import React from "react";
-import { Button, Modal, ModalFooter, ModalHeader, ModalBody } from "reactstrap";
+import { Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 import ErrorMessage from "../../SharedComponents/Error";
 import { Feedback } from "../../SharedComponents/Feedback";
 
 export default function NewForm({
-  setbookingDetail,
-  componentId,
   component,
   error_msg,
   data,

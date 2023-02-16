@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-
-// import cpbs from "../../assets/productAssets/cpbs.png";
 import background from "../../assets/background.jpg";
 import price_table from "../../assets/price_table.png";
 import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 import { useDispatch, useSelector } from "react-redux";
 import makeConsultation from "../../../actions/verificationConsultation";
-import EngageInService from "../../SharedComponents/EngageInService";
 import partner from "../../assets/partner2.jpg";
 
 const CompleteBuyer = () => {

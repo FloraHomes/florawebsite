@@ -1,6 +1,5 @@
 import React from "react";
 import background from "../../../assets/background.jpg";
-import EngageInService from "../../../SharedComponents/EngageInService";
 import StepToOwnYourUnits from "../../../SharedComponents/StepToOwnYourUnits";
 import FloracityCountDown from "./FloracityCountDown";
 

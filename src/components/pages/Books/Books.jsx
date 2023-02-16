@@ -6,8 +6,6 @@ import hsn from "../../assets/hsn-book.png";
 import mobileView from "../../assets/mobile_view.png";
 import book from "../../assets/Book.jpg";
 import moneyBack from "../../assets/money-back-banner.png";
-import OptinModal from "../../SharedComponents/OptinModal";
-import BookOptinForm from "./BookOptinForm";
 import "./books.css";
 import customer1 from "../../assets/booksImages/1.jpg";
 import customer2 from "../../assets/booksImages/2.jpg";

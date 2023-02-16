@@ -1,45 +1,32 @@
 /* eslint-disable react/jsx-pascal-case */
 import React, { useState } from "react";
 
-import Optin_Trigger from "./Optin_Trigger";
 import "./flora.css";
-import miniFlat from "../../assets/floracity_7.jpg";
-import mezzazine from "../../assets/mezzazine.jpg";
-import header from "../../assets/flora-images/header2.jpg";
-import rocket from "../../assets/rocket.svg";
 import background from "../../assets/background.jpg";
-import gal1 from "../../assets/flora-images/flora-gal1.jpg";
-import gal2 from "../../assets/flora-images/flora-gal2.jpg";
-import gal3 from "../../assets/flora-images/flora-gal3.jpg";
-import gal4 from "../../assets/flora-images/flora-gal4.jpg";
 import imgPark from "../../assets/floraEcopolis-images/FloraCity VIEW 30 1.0 PH.jpg";
-import PaymentDetails from "../../SharedComponents/PaymentDetails";
-import OptinModal from "../../SharedComponents/OptinModal";
-import OptinForm from "../../SharedComponents/OptinForm";
 import bookvideo from "../../assets/videos/Floracity Ecopolis.mp4";
 import FloraModal from "./FloraModal";
 import FloraForm from "./FloraForm";
 import FloraImagesComponent from "./flora-components/FloraImagesComponent";
 import AccordionContainer from "./flora-components/AccordionContainer";
 import StepsToOwnYourUnits from "./flora-components/StepsToOwnYourUnits";
-import Counter from "../../SharedComponents/CountDown";
 import FloracityCountDown from "./flora-components/FloracityCountDown";
 import FAQAccordions from "./flora-components/FAQAccordions";
-import NewForm from "./NewForm";
+
 
 // import Footer from "../../layouts/Footer";
 
 const FloraEcopolis = () => {
   const [bookingDetail, setbookingDetail] = useState({});
-  const [formData, setformData] = useState({
-    full_name: "",
-    email: "",
-    phone_number: "",
-    whatsapp_number: "",
-    city: "",
-    how_you_hear_about_us: "",
-    category: "",
-  });
+  // const [formData, setformData] = useState({
+  //   full_name: "",
+  //   email: "",
+  //   phone_number: "",
+  //   whatsapp_number: "",
+  //   city: "",
+  //   how_you_hear_about_us: "",
+  //   category: "",
+  // });
   return (
     <>
       <section style={{ backgroundImage: `url(${background})` }}>
@@ -259,7 +246,7 @@ const FloraEcopolis = () => {
         <div className="auto-container">
           <div className="row">
             <div className="col-lg-12 pt-5 pb-5 text-white">
-              <img src={imgPark} />
+              <img alt="simple park" src={imgPark} />
               <br />
               <br />
               <br />

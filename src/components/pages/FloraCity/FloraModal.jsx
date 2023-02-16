@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import ErrorMessage from "../../SharedComponents/Error";
 import { Feedback } from "../../SharedComponents/Feedback";
 import "../../SharedComponents/optinmodal.css";

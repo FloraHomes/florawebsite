@@ -25,7 +25,7 @@ export default function ReuseableMainComponent({
           <p className="heading-top-paragraph">{headingParagraph}</p>
           {isList && <h3>{imageHeadline}</h3>}
         </div>
-        <img src={image} />
+        <img alt="relojhhg" src={image} />
 
         {isList ? (
           <div className="list-container">

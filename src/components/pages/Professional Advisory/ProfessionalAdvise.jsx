@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import tawkTo from "tawkto-react";
 import { useDispatch, useSelector } from "react-redux";
 import makeConsultation from "../../../actions/verificationConsultation";
-import EngageInService from "../../SharedComponents/EngageInService";
 import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import partner from "../../assets/partner2.jpg";
-import price from "../../assets/price.png";
+
 const ProfessionalAdvisory = () => {
   const tawkToPropertyId = "5a9e51824b401e45400d70e9";
 

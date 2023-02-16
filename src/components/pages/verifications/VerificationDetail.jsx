@@ -5,17 +5,14 @@ import partner from '../../assets/partner2.jpg';
 // import optin_bg from "../../assets/optin-bg.jpg"
 // import verification from "../../assets/verification.png";
 // import background from "../../assets/background.jpg";
-import price from '../../assets/price.png';
 // import iconShape from "../../assets/icon-shape.png";
 import PaymentDetails from '../../SharedComponents/PaymentDetails';
 import LandingPageOptinForm from '../../SharedComponents/LandingPageOptinForm';
-import EngageInService from '../../SharedComponents/EngageInService';
 import { useDispatch } from 'react-redux';
 import makeConsultation from '../../../actions/verificationConsultation';
 import { useSelector } from 'react-redux';
 import VerificationPriceTable from '../../tables/VerificationPriceTable';
 import PriceTable from '../../tables/PriceTable';
-import ReviewCard from '../../bootstrap-components/ReviewCard';
 import Carousel from '../../bootstrap-components/Carousel';
 import user1 from '../../assets/productAssets/user1.jpg';
 import user2 from '../../assets/productAssets/user2.jpg';
@@ -28,7 +25,7 @@ const VerificationDetail = () => {
 
   // Direct Chat Link
   // https://tawk.to/chat/tawkToPropertyId/tawkToKey
-  const [reviewCardData, setReviewCardData] = useState([
+  const [reviewCardData] = useState([
     {
       user_name: 'Muhammad Abdullahi',
       review:
