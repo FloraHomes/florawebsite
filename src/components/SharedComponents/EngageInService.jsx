@@ -7,6 +7,7 @@ export default function EngageInService({
   fourth_step,
   call_to_action,
   call_to_action2,
+  title = "HOW TO ENGAGE THIS SERVICE",
   howToOur = false,
   remove3rdButton = false,
 }) {
@@ -14,13 +15,13 @@ export default function EngageInService({
     <>
       <div className="auto-container mt-5 mb-3">
         <div className="sec-title text-center">
-          <span
+          {/* <span
             className={!howToOur && "title"}
             style={{ color: howToOur && "#fff" }}
           >
             HOW TO
-          </span>
-          <h2 style={{ color: howToOur && "#fff" }}>ENGAGE THIS SERVICE</h2>
+          </span> */}
+          <h2 className="mb-3" style={{ color: howToOur && "#fff" }}>{title}</h2>
         </div>
 
         <div className="schedule-tabs tabs-box">

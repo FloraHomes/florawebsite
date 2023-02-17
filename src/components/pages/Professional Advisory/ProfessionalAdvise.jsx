@@ -5,6 +5,7 @@ import makeConsultation from "../../../actions/verificationConsultation";
 import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import partner from "../../assets/partner2.jpg";
+import EngageInService from "../../SharedComponents/EngageInService";
 
 const ProfessionalAdvisory = () => {
   const tawkToPropertyId = "5a9e51824b401e45400d70e9";
@@ -285,7 +286,57 @@ const ProfessionalAdvisory = () => {
         </div>
       </section>
 
-      <section className="mt-5">
+      <section style={{ background: "#541484" }} className="mt-4">
+        <div className="auto-container">
+          <div className="col-lg-12 pt-3 pb-5 ">
+            <EngageInService
+              title = "HOW IT WORKS"
+              first_step="Enter detailed briefs"
+              second_step="  Make Payment."
+              third_step="Schedule A Call"
+              fourth_step="Connect with Your Personal Advisor"
+              howToOur={true}
+              remove3rdButton={true}
+              call_to_action={
+                <div
+                  class="btn-box veriff-first"
+                  style={{
+                    display: "block",
+                    textAlign: "center",
+                  }}
+                >
+                  <button
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#landingModal"
+                    class="theme-btn btn-style-four mb-4 mt-3"
+                  >
+                    <span class="btn-title">
+                      Get Started
+                    </span>
+                  </button>
+                </div>
+              }
+              call_to_action2={
+                <div
+                  className="phone-number"
+                  style={{
+                    color: "#ed6c11",
+                    textAlign: "center",
+                    display: "block",
+                  }}
+                >
+                  <a href="tel:+2348094442019 " className="call-link-two">
+                    OR CLICK HERE TO CALL
+                  </a>
+                </div>
+              }
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="mt-5">
         <div className="auto-container">
         <h5 style={{ color: "black" }}>
                 <b>How it works</b>
@@ -301,33 +352,12 @@ const ProfessionalAdvisory = () => {
             </li>
             <li>Schedule A Call</li>
             <li>Connect with Your Personal Advisor</li>
-            {/* <li>
-              <div
-                class="btn-box"
-                style={{ display: "inline", marginRight: "10px" }}
-              >
-                <button
-                  data-toggle="modal"
-                  data-target="#landingModal"
-                  class="theme-btn btn-style-four mb-4 mt-3"
-                >
-                  <span class="btn-title">REQUEST A CALL-BACK NOW</span>
-                </button>
-              </div>
-              <div className="phone-number">
-                <a href="tel:+2348094442019 " className="call-link-two">
-                  {" "}
-                  OR CLICK HERE TO CALL{" "}
-                </a>
-              </div>
-            </li> */}
+           
           </ul>
 
-          {/* <p style={{ fontWeight: 'bold' }}>
-              So how exactly do you know the genuinity of a property?
-            </p> */}
+  
         </div>
-      </section>
+      </section> */}
 
       <section className="about-section">
         <div className="auto-container">
