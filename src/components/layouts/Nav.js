@@ -252,7 +252,7 @@ const Nai = () => {
               </Link>
             </div>
           </li>
-          <li className="nav-item mr-4 dropdown">
+          {/* <li className="nav-item mr-4 dropdown">
             <Link
               className="nav-link"
               to="/our-estate"
@@ -297,7 +297,7 @@ const Nai = () => {
                 FloraCity Ecopolis
               </Link>
             </div>
-          </li>
+          </li> */}
 
           <li className="nav-item mr-4 dropdown">
             <Link
@@ -307,7 +307,7 @@ const Nai = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-               Estates
+               Our Estates
             </Link>
             <span
               className="dropdown-toggle"
