@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import tawkTo from "tawkto-react";
-import { useDispatch, useSelector } from "react-redux";
-import makeConsultation from "../../../actions/verificationConsultation";
+// import { useDispatch, useSelector } from "react-redux";
+// import makeConsultation from "../../../actions/verificationConsultation";
 import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import partner from "../../assets/partner2.jpg";
 import PhotoGallery from "../../layouts/PhotoGallery";
+import { galleryData } from "../../../data/photoGrid";
 
 
 
@@ -31,14 +32,14 @@ const DBM = () => {
     message: "",
     how_you_hear_about_us: "",
   });
-  const dispatch = useDispatch();
-  const { data, loading, error } = useSelector(
-    (state) => state.verificationConsultation
-  );
+  // const dispatch = useDispatch();
+  // const { data, loading, error } = useSelector(
+  //   (state) => state.verificationConsultation
+  // );
 
   const onSubmit = (e) => {
     e.preventDefault();
-    dispatch(makeConsultation(consultationDetails));
+    // dispatch(makeConsultation(consultationDetails));
     setconsultationDetails({
       full_name: "",
       email: "",
@@ -135,7 +136,7 @@ const DBM = () => {
           </div>
           <div className="mt-5">
             <h5 className="text-center mb-3"><b>What We Have Done</b></h5>
-          <PhotoGallery/>
+          <PhotoGallery data={galleryData}/>
           </div>
         </div>
       </section>
@@ -173,9 +174,9 @@ const DBM = () => {
         onSubmit={onSubmit}
         consultationDetails={consultationDetails}
         setconsultationDetails={setconsultationDetails}
-        data={data}
-        loading={loading}
-        error={error}
+        // data={data}
+        // loading={loading}
+        // error={error}
       />
       {/* <Footer/> */}
     </>

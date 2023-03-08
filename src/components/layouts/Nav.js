@@ -1,10 +1,21 @@
 import React, { useRef, useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
+import { fetchProperties } from "../../redux/slices/propertiesSlice";
+import {replaceSpaceWithHyphen } from "../../utils/format";
 import logo from "../assets/FHGC weblogo.png";
 
 const Nai = () => {
   const [navScroll, setNavScroll] = useState(false);
   const [notHome, setNotHome] = useState(false);
+
+  const dispatch = useDispatch()
+
+  const properties = useSelector((state) => state?.properties?.properties)
+
+  useEffect(() => {
+        dispatch(fetchProperties())
+  }, [dispatch])
 
   let button = useRef("button");
   let Nav = useRef("Nav");
@@ -174,14 +185,14 @@ const Nai = () => {
               >
                 Our Estate
               </Link>
-              <Link
+              {/* <Link
                 className="dropdown-item"
                 to="/#"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
               >
                 Bulk And Purchase
-              </Link>
+              </Link> */}
               <Link
                 className="dropdown-item"
                 to="/design-build-manage"
@@ -221,6 +232,14 @@ const Nai = () => {
                 data-target="#navbarSupportedContent"
               >
                 Investment Management
+              </Link>
+              <Link
+                className="dropdown-item"
+                to="/own-earner"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+              >
+                Own Earner
               </Link>
               <div className="dropdown-divider"></div>
               <Link
@@ -279,6 +298,44 @@ const Nai = () => {
               </Link>
             </div>
           </li>
+
+          <li className="nav-item mr-4 dropdown">
+            <Link
+              className="nav-link"
+              to="/estates"
+              id="navbarDropdown"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+            >
+               Estates
+            </Link>
+            <span
+              className="dropdown-toggle"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i className="fas fa-chevron-circle-down"></i>
+            </span>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              {properties?.map((property) => (
+                     <Link
+                     key={property?._id}
+                     className="dropdown-item"
+                     to={`/estate/${replaceSpaceWithHyphen(property?.name)}`}
+                     data-toggle="collapse"
+                     data-target="#navbarSupportedContent"
+                   >
+                     {property?.name}
+                   </Link>
+              ))}
+         
+           
+            </div>
+          </li>
+
+
           <li className="nav-item mr-4">
             <Link
               className="nav-link"

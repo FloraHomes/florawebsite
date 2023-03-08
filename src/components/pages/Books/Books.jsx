@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import bookvideo from "../../assets/videos/Book video.mp4";
 import background from "../../assets/background.jpg";
@@ -14,9 +14,9 @@ import customer4 from "../../assets/booksImages/4.jpg";
 import customer5 from "../../assets/booksImages/5.jpg";
 import customer6 from "../../assets/booksImages/6.jpg";
 import Counter from "../../SharedComponents/CountDown";
-import { useDispatch } from "react-redux";
-import booksAction from "../../../actions/books";
-import { useSelector } from "react-redux";
+// import { useDispatch } from "react-redux";
+// import booksAction from "../../../actions/books";
+// import { useSelector } from "react-redux";
 import BookModal from "./BookModal";
 import { useHistory } from "react-router-dom";
 // import { useHistory } from "react-router";
@@ -31,20 +31,20 @@ export default function Books() {
     category: "",
   });
 
-  const [bookingDetail, setbookingDetail] = useState({
-    error_msg: null,
-    bookings_data: null,
-  });
+  // const [bookingDetail, setbookingDetail] = useState({
+  //   error_msg: null,
+  //   bookings_data: null,
+  // });
 
-  const { loading, error, bookings } = useSelector(
-    (state) => state.bookingData
-  );
-  console.log(bookings);
-  useEffect(() => {
-    setbookingDetail({ error_msg: error, bookings_data: bookings });
-  }, [error, bookings]);
+  // const { loading, error, bookings } = useSelector(
+  //   (state) => state.bookingData
+  // );
+  // console.log(bookings);
+  // useEffect(() => {
+  //   setbookingDetail({ error_msg: error, bookings_data: bookings });
+  // }, [error, bookings]);
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -59,7 +59,7 @@ export default function Books() {
       alert("please fill all provided inputs");
       return;
     }
-    dispatch(booksAction(formData));
+    // dispatch(booksAction(formData));
     history.push("/thank-you");
     setformData({
       full_name: "",
@@ -996,10 +996,10 @@ export default function Books() {
       </section>
 
       <BookModal
-        error_msg={bookingDetail.error_msg}
-        setbookingDetail={setbookingDetail}
-        data={bookingDetail.bookings_data}
-        loading={loading}
+        // error_msg={bookingDetail.error_msg}
+        // setbookingDetail={setbookingDetail}
+        // data={bookingDetail.bookings_data}
+        // loading={loading}
         formData={formData}
         setformData={setformData}
         handleSubmit={handleSubmit}

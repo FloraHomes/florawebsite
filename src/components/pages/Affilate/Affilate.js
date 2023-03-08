@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import background from "../../assets/background.jpg";
 import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
-import { useDispatch, useSelector } from "react-redux";
-import makeConsultation from "../../../actions/verificationConsultation";
+// import { useDispatch, useSelector } from "react-redux";
+// import makeConsultation from "../../../actions/verificationConsultation";
 import partner from "../../assets/partner2.jpg";
 
 const Affilate = () => {
@@ -18,14 +18,14 @@ const Affilate = () => {
     message: "",
     how_you_hear_about_us: "",
   });
-  const dispatch = useDispatch();
-  const { data, loading, error } = useSelector(
-    (state) => state.verificationConsultation
-  );
+  // const dispatch = useDispatch();
+  // const { data, loading, error } = useSelector(
+  //   (state) => state.verificationConsultation
+  // );
 
   const onSubmit = (e) => {
     e.preventDefault();
-    dispatch(makeConsultation(consultationDetails));
+    // dispatch(makeConsultation(consultationDetails));
     setconsultationDetails({
       full_name: "",
       email: "",
@@ -203,9 +203,9 @@ const Affilate = () => {
         onSubmit={onSubmit}
         consultationDetails={consultationDetails}
         setconsultationDetails={setconsultationDetails}
-        data={data}
-        loading={loading}
-        error={error}
+        // data={data}
+        // loading={loading}
+        // error={error}
       />
 
     </>

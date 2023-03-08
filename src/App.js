@@ -33,12 +33,17 @@ import VerificationDetail from "./components/pages/verifications/VerificationDet
 import ThankYouCommon from "./components/pages/ThankYouCommon";
 import DBM from "./components/pages/Development Build And Manage/DBM";
 import Affilate from "./components/pages/Affilate/Affilate";
+import Estates from "./components/pages/OurEstates/Estates";
+import EstateDetails from "./components/pages/FloraCity/EstateDetails";
+import OwnEarner from "./components/pages/OwnEarner/OwnEarner";
 
 const App = () => {
   const myRef = useRef();
+
   useEffect(() => {
     myRef.current.scrollTo(0, 0);
   }, []);
+
   return (
     <div ref={myRef} className="App">
       <Router>
@@ -52,6 +57,7 @@ const App = () => {
           <Route path="/contact" children={<Contact />} />
           <Route path="/about" children={<About />} />
           <Route path="/verification" children={<Verification />} />
+          <Route path="/own-earner" children={<OwnEarner />} />
           <Route
             path="/verification-detail"
             children={<VerificationDetail />}
@@ -69,6 +75,8 @@ const App = () => {
           <Route path="/design-build-manage" children={<DBM />} />
           <Route path="/affilate" children={<Affilate />} />
           <Route path="/our-estate" children={<OurEstates />} />
+          <Route path="/estates" children={<Estates />} />
+          <Route path="/estate/:name" children={<EstateDetails />} />
           <Route path="/optin" children={<OptinForm />} />
           <Route path="/blog-1" children={<LagosSetToDigitalize />} />
           <Route path="/blog-2" children={<KnowYourLandSize />} />

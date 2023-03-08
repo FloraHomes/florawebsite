@@ -10,9 +10,9 @@ import verificationImage from "../../assets/verification/verification price.png"
 import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 import EngageInService from "../../SharedComponents/EngageInService";
-import { useDispatch } from "react-redux";
-import makeConsultation from "../../../actions/verificationConsultation";
-import { useSelector } from "react-redux";
+// import { useDispatch } from "react-redux";
+// import makeConsultation from "../../../actions/verificationConsultation";
+// import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 
 const Verification = () => {
@@ -39,14 +39,15 @@ const Verification = () => {
     message: "",
     how_you_hear_about_us: "",
   });
-  const dispatch = useDispatch();
-  const { data, loading, error } = useSelector(
-    (state) => state.verificationConsultation
-  );
+  // const dispatch = useDispatch();
+  // const { data, loading, error } = useSelector(
+  //   (state) => state.verificationConsultation
+  // );
 
   const onSubmit = (e) => {
     e.preventDefault();
-    dispatch(makeConsultation(consultationDetails));
+    // dispatch(makeConsultation(consultationDetails));
+    console.log("submit");
 
     navigation.push("/thank-you-for-submission");
 
@@ -803,9 +804,9 @@ const Verification = () => {
         onSubmit={onSubmit}
         consultationDetails={consultationDetails}
         setconsultationDetails={setconsultationDetails}
-        data={data}
-        loading={loading}
-        error={error}
+        // data={data}
+        // loading={loading}
+        // error={error}
       />
       {/* <Footer/> */}
     </>
