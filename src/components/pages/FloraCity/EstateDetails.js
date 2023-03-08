@@ -5,7 +5,7 @@ import renderHTML from "react-render-html";
 import handleAccordion from "../OurEstates";
 import { photoGridObj, replaceSpaceWithHyphen } from "../../../utils/format";
 import PhotoGallery from "../../layouts/PhotoGallery";
-import Optin_Trigger from "./Optin_Trigger";
+// import Optin_Trigger from "./Optin_Trigger";
 import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import OptinModal from "../../SharedComponents/OptinModal";
 import OptinForm from "../../SharedComponents/OptinForm";
@@ -288,7 +288,7 @@ const EstateDetails = () => {
                   {/* <div class="btn-box ml-3"></div>
                 </div> */}
                 <div className="form-inner text-center">
-                  <Optin_Trigger />
+                  {/* <Optin_Trigger /> */}
                   {/* <h3 className="call-enquiry">Or call +2348024421356</h3> */}
                   <a
                     href="tel:+2348024421356 "
