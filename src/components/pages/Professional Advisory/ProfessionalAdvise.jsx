@@ -240,10 +240,10 @@ const ProfessionalAdvisory = () => {
 
       <section className>
         <div className="auto-container">
-          <h5 style={{ color: "black" }}>
+          {/* <h5 style={{ color: "black" }}>
             <b>Additional benefits</b>
           </h5>
-          <br />
+          <br /> */}
           <ul className=" ul-text-dark">
             <li><b>Advisory: &#8358;100,000</b></li>
             <ul className="ul-text-dark" style={{ marginLeft: "30px"}}>

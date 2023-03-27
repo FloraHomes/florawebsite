@@ -179,7 +179,7 @@ const Nai = () => {
               </Link>
               <Link
                 className="dropdown-item"
-                to="/our-estate"
+                to="/estates"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
               >

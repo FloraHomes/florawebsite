@@ -29,7 +29,7 @@ const EstateDetails = () => {
     (property) => replaceSpaceWithHyphen(property.name) === name
   );
 
-  console.log(property);
+  
  
   return (
     <>

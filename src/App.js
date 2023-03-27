@@ -36,6 +36,7 @@ import Affilate from "./components/pages/Affilate/Affilate";
 import Estates from "./components/pages/OurEstates/Estates";
 import EstateDetails from "./components/pages/FloraCity/EstateDetails";
 import OwnEarner from "./components/pages/OwnEarner/OwnEarner";
+import Estates2 from "./components/pages/OurEstates/Estates2";
 
 const App = () => {
   const myRef = useRef();
@@ -76,7 +77,7 @@ const App = () => {
           <Route path="/affilate" children={<Affilate />} />
           <Route path="/our-estate" children={<OurEstates />} />
           <Route path="/estates" children={<Estates />} />
-          <Route path="/estate/:name" children={<EstateDetails />} />
+          <Route path="/estate/:name" children={<Estates2 />} />
           <Route path="/optin" children={<OptinForm />} />
           <Route path="/blog-1" children={<LagosSetToDigitalize />} />
           <Route path="/blog-2" children={<KnowYourLandSize />} />
