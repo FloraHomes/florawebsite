@@ -7,7 +7,6 @@ import {
 } from "reactstrap";
 import "../FloraCity/flora.css";
 import background from "../../assets/background.jpg";
-import imgPark from "../../assets/floraEcopolis-images/FloraCity VIEW 30 1.0 PH.jpg";
 import renderHTML from "react-render-html";
 import { useSelector } from "react-redux";
 import { replaceSpaceWithHyphen } from "../../../utils/format";
@@ -53,7 +52,6 @@ const Estates2 = () => {
     (property) => replaceSpaceWithHyphen(property.name) === name
   );
 
-  const [bookingDetail, setbookingDetail] = useState({});
   return (
     <>
       <section style={{ backgroundImage: `url(${background})` }}>
@@ -81,7 +79,7 @@ const Estates2 = () => {
                  <source src={property?.coverPhoto} type="video/mp4" />
                </video>
               ): (
-                <img src={property?.coverPhoto} width="100%"/>
+                <img src={property?.coverPhoto} alt="cover diag" width="100%"/>
               )}
                
 
