@@ -34,7 +34,7 @@ import ThankYouCommon from "./components/pages/ThankYouCommon";
 import DBM from "./components/pages/Development Build And Manage/DBM";
 import Affilate from "./components/pages/Affilate/Affilate";
 import Estates from "./components/pages/OurEstates/Estates";
-import EstateDetails from "./components/pages/FloraCity/EstateDetails";
+// import EstateDetails from "./components/pages/FloraCity/EstateDetails";
 import OwnEarner from "./components/pages/OwnEarner/OwnEarner";
 import Estates2 from "./components/pages/OurEstates/Estates2";
 
