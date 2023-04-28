@@ -15,7 +15,7 @@ const EstateCard = ({property}) => {
         </div>
         <div className="lower-content h-100">
           <h4>
-            <Link to={`/estate/${replaceSpaceWithHyphen(property?.name)}`}>{property?.name} - <small style={{color:"#ed6c11"}}>{property?.propertyCategory?.name}</small></Link>
+            <Link to={`/estate/${replaceSpaceWithHyphen(property?.name)}`}>{property?.name} - <small style={{color:"#ed6c11"}}>{property?.propertyCategory}</small></Link>
           </h4>
           <p>{property?.caption}</p>
           <div className="btn-box">

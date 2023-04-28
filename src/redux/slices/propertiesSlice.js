@@ -21,8 +21,8 @@ export const fetchProperties = createAsyncThunk(
     initialState,
     reducers: {
       filterByPropertyCategory: (state, {payload}) => {
-        console.log(('payload', current(state.allProperties)));
-          state.properties = payload === "all" ? current(state.allProperties) : current(state.allProperties).filter((property) => property.propertyCategory._id === payload)
+        console.log('payload', payload);
+          state.properties = payload === "all" ? current(state.allProperties) : current(state.allProperties).filter((property) => property.propertyCategory === payload)
       },
   },
     extraReducers: (builder) => {

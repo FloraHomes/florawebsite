@@ -16,7 +16,7 @@ import combinedSlices from "./slices/combinedSlices";
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist: ['properties']
+    whitelist: ['properties', 'stories']
 };
 
 const persistedReducer = persistReducer(persistConfig, combinedSlices);
