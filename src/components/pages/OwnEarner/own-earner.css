@@ -274,7 +274,7 @@ footer{
 }
 
 .owne-heading {
-    /* font-size: 60px !important */
+    /* margin-top: -10px; */
 }
 
 @media screen and (max-width: 990px) {
@@ -302,7 +302,7 @@ footer{
     }
 
     .owne-hero .p1, .owne-hero h1, .owne-hero .p2{
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
 
     .owne-hero button{
@@ -342,7 +342,16 @@ footer{
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .owne-heading {
       font-size: 30px !important;
+      /* margin-top: -50px; */
     }
-  
+
+   /* .owne-hero .p2{
+        margin-top: -40px;
+    }
+
+    .owne-btn{
+        margin-top: -80px;
+    }
+   */
   }
 
