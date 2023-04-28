@@ -20,8 +20,9 @@ const OwnEarner = () => {
   const properties = useSelector((state) => state?.properties?.properties);
   const stories = useSelector((state) => state?.stories?.stories);
 
+  // console.log(stories);
 
-  const ownEarnerProperty = properties.filter(
+  const ownEarnerProperty = properties?.filter(
     (property) => property?.propertyCategory === "own-earner"
   );
 
@@ -33,7 +34,7 @@ const OwnEarner = () => {
   useEffect(() => {
     tawkTo(tawkToPropertyId, tawkToKey);
     dispatch(fetchStories());
-  }, [dispatch]);
+  }, []);
 
   const [consultationDetails, setconsultationDetails] = useState({
     full_name: "",
