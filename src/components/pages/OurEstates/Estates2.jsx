@@ -69,22 +69,23 @@ const Estates2 = () => {
                 </p>
               </div>
               <div className="vidBox">
-              {property?.coverMediaType === "video" ? (
-                 <video
-                 width="100%"
-                 loop="true"
-                 autoPlay="autoplay"
-                 controls
-                 muted
-               >
-                 <source src={property?.coverPhoto} type="video/mp4" />
-               </video>
-              ): (
-                <img src={property?.coverPhoto} alt="cover diag" width="100%"/>
-              )}
-               
-
-                
+                {property?.coverMediaType === "video" ? (
+                  <video
+                    width="100%"
+                    loop="true"
+                    autoPlay="autoplay"
+                    controls
+                    muted
+                  >
+                    <source src={property?.coverPhoto} type="video/mp4" />
+                  </video>
+                ) : (
+                  <img
+                    src={property?.coverPhoto}
+                    alt="cover diag"
+                    width="100%"
+                  />
+                )}
               </div>
               <br />
               <br />
@@ -158,6 +159,26 @@ const Estates2 = () => {
                   <br />
                 </>
               )}
+
+              {property?.planNumber && (
+                <>
+                  <div>
+                    <p
+                      style={{
+                        color: "#fff",
+                        fontSize: 20,
+                        lineHeight: "26px",
+                        textAlign: "left",
+                      }}
+                    >
+                      <span className="icon fa fa-anchor mr-3" />
+                      <strong> Plan Number: </strong>
+                      {property?.planNumber}
+                    </p>
+                  </div>
+                  <br />
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -211,9 +232,7 @@ const Estates2 = () => {
               <br />
 
               <div className="sec-title">
-                <span className="flora-ecopolis">
-                  Features &amp; Benefits
-                </span>
+                <span className="flora-ecopolis">Features &amp; Benefits</span>
               </div>
 
               <div className="row">
@@ -313,38 +332,39 @@ const Estates2 = () => {
                     </AccordionItem>
                   ))}
                 </UncontrolledAccordion>
-
-                
               </div>
             </div>
-            <p className="text-center" style={{ marginTop: "10px", marginBottom:40 }}>
-                <div className="text-center mb-4 mt-4">
-                  <FloracityCountDown
-                    style={{
-                      color: "black",
-                      textAlign: "center",
-                      fontSize: "20px",
-                      fontWeight: "bold",
-                      padding: "2px",
-                    }}
-                  />
-                </div>
-                <button
-                  data-toggle="modal"
-                  data-target="#optinForm"
-                  className="theme-btn btn-style-one clickable-modal"
-                  style={{ backgroundColor: "#98b285", fontWeight: "bold" }}
-                >
-                  <span className="btn-title">
-                    CLICK HERE TO FILL THE INTEREST FORM AND A FLORACARE MANAGER
-                    WILL CONTACT YOU
-                  </span>
-                </button>
-              </p>
+            <p
+              className="text-center"
+              style={{ marginTop: "10px", marginBottom: 40 }}
+            >
+              <div className="text-center mb-4 mt-4">
+                <FloracityCountDown
+                  style={{
+                    color: "black",
+                    textAlign: "center",
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    padding: "2px",
+                  }}
+                />
+              </div>
+              <button
+                data-toggle="modal"
+                data-target="#optinForm"
+                className="theme-btn btn-style-one clickable-modal"
+                style={{ backgroundColor: "#98b285", fontWeight: "bold" }}
+              >
+                <span className="btn-title">
+                  CLICK HERE TO FILL THE INTEREST FORM AND A FLORACARE MANAGER
+                  WILL CONTACT YOU
+                </span>
+              </button>
+            </p>
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };
