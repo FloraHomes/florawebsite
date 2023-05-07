@@ -13,6 +13,7 @@ import { replaceSpaceWithHyphen } from "../../../utils/format";
 import { useParams } from "react-router-dom";
 import FloracityCountDown from "../FloraCity/flora-components/FloracityCountDown";
 import ReuseableMainComponent from "../FloraCity/flora-components/ReuseableMainComponent";
+import Footer from "../../layouts/Footer";
 
 const Estates2 = () => {
   let params = useParams();
@@ -343,6 +344,7 @@ const Estates2 = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

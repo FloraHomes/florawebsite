@@ -19,6 +19,7 @@ import Counter from "../../SharedComponents/CountDown";
 // import { useSelector } from "react-redux";
 import BookModal from "./BookModal";
 import { useHistory } from "react-router-dom";
+import Footer from "../../layouts/Footer";
 // import { useHistory } from "react-router";
 export default function Books() {
   const history = useHistory();
@@ -1004,6 +1005,8 @@ export default function Books() {
         setformData={setformData}
         handleSubmit={handleSubmit}
       />
+
+      <Footer/>
     </>
   );
 }

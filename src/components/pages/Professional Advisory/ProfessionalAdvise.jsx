@@ -6,6 +6,7 @@ import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import partner from "../../assets/partner2.jpg";
 import EngageInService from "../../SharedComponents/EngageInService";
+import Footer from "../../layouts/Footer";
 
 const ProfessionalAdvisory = () => {
   const tawkToPropertyId = "5a9e51824b401e45400d70e9";
@@ -497,7 +498,7 @@ const ProfessionalAdvisory = () => {
           </div>
         </div>
       </section>
-      <PaymentDetails />
+      {/* <PaymentDetails /> */}
       <LandingPageOptinForm
         onSubmit={onSubmit}
         consultationDetails={consultationDetails}
@@ -506,7 +507,7 @@ const ProfessionalAdvisory = () => {
         // loading={loading}
         // error={error}
       />
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };

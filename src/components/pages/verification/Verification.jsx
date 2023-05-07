@@ -6,7 +6,7 @@ import customer1 from "../../assets/customers/1.png";
 import customer2 from "../../assets/customers/2.png";
 import customer3 from "../../assets/customers/3.png";
 import customer4 from "../../assets/customers/4.png";
-import verificationImage from "../../assets/verification/verification price.png";
+import verificationImage from "../../assets/verification/ver.png";
 import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 import EngageInService from "../../SharedComponents/EngageInService";
@@ -14,6 +14,7 @@ import EngageInService from "../../SharedComponents/EngageInService";
 // import makeConsultation from "../../../actions/verificationConsultation";
 // import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
+import Footer from "../../layouts/Footer";
 
 const Verification = () => {
   const tawkToPropertyId = "5a9e51824b401e45400d70e9";
@@ -799,7 +800,7 @@ const Verification = () => {
           </div>
         </div>
       </section>
-      <PaymentDetails />
+      {/* <PaymentDetails /> */}
       <LandingPageOptinForm
         onSubmit={onSubmit}
         consultationDetails={consultationDetails}
@@ -808,7 +809,7 @@ const Verification = () => {
         // loading={loading}
         // error={error}
       />
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };

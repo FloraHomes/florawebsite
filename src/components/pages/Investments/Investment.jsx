@@ -9,6 +9,7 @@ import InestmentReusableForm from "../../SharedComponents/InestmentReusableForm"
 import "./styles.css";
 import OptinForm from "../../SharedComponents/OptinForm";
 import ClientEngagementForm from "../../SharedComponents/ClientEngagementForm";
+import Footer from "../../layouts/Footer";
 
 const Investment = () => {
   const [formData, setformData] = useState({
@@ -923,6 +924,7 @@ const Investment = () => {
           />
         }
       />
+      <Footer/>
     </>
   );
 };

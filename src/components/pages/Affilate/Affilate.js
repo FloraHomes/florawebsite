@@ -5,6 +5,7 @@ import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 // import { useDispatch, useSelector } from "react-redux";
 // import makeConsultation from "../../../actions/verificationConsultation";
 import partner from "../../assets/partner2.jpg";
+import Footer from "../../layouts/Footer";
 
 const Affilate = () => {
   const [consultationDetails, setconsultationDetails] = useState({
@@ -198,7 +199,7 @@ const Affilate = () => {
      
       </div>
 
-      <PaymentDetails />
+      {/* <PaymentDetails /> */}
       <LandingPageOptinForm
         onSubmit={onSubmit}
         consultationDetails={consultationDetails}
@@ -207,7 +208,7 @@ const Affilate = () => {
         // loading={loading}
         // error={error}
       />
-
+  <Footer/>
     </>
   );
 };

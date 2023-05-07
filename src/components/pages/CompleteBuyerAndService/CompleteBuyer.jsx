@@ -6,6 +6,7 @@ import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 // import { useDispatch, useSelector } from "react-redux";
 // import makeConsultation from "../../../actions/verificationConsultation";
 import partner from "../../assets/partner2.jpg";
+import Footer from "../../layouts/Footer";
 
 const CompleteBuyer = () => {
   const [consultationDetails, setconsultationDetails] = useState({
@@ -696,7 +697,7 @@ const CompleteBuyer = () => {
           </li>
         </ul> */}
       </div>
-      <PaymentDetails />
+      {/* <PaymentDetails /> */}
       <LandingPageOptinForm
         onSubmit={onSubmit}
         consultationDetails={consultationDetails}
@@ -705,6 +706,7 @@ const CompleteBuyer = () => {
         // loading={loading}
         // error={error}
       />
+      <Footer/>
     </>
   );
 };

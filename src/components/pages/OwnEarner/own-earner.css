@@ -29,7 +29,7 @@
 /* w-full text-flora-purple bg hero h-screen relative mb-20 */
 
 .owne-hero{
-    /* background-image: url("assets/pic4.jpg"); */
+    background-image: url("https://www.srivari.co.in/wp-content/uploads/2022/03/tax-benefits.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -279,7 +279,7 @@ footer{
 
 @media screen and (max-width: 990px) {
     .owne-hero{
-        /* background-image: url("assets/pic4.jpg"); */
+        background-image: none;
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center;

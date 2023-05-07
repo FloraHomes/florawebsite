@@ -4,6 +4,7 @@ import { propertyCategories } from "../../../data/property";
 import { filterByPropertyCategory } from "../../../redux/slices/propertiesSlice";
 import estate_header from "../../assets/flora_header.jpg";
 import EstateCard from "./EstateCard";
+import Footer from "../../layouts/Footer";
 
 const Estates = () => {
   const properties = useSelector((state) => state?.properties?.properties)
@@ -60,6 +61,7 @@ const Estates = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

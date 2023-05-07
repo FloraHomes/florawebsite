@@ -11,6 +11,7 @@ import EstateCard from "../OurEstates/EstateCard";
 import surv from "../../assets/lb.jpeg";
 import iconShape from "../../assets/icon-shape.png";
 import { fetchStories } from "../../../redux/slices/storiesSlice";
+import Footer from "../../layouts/Footer";
 
 const OwnEarner = () => {
   const tawkToPropertyId = "5a9e51824b401e45400d70e9";
@@ -234,7 +235,7 @@ const OwnEarner = () => {
         </section>
       )}
 
-      <PaymentDetails />
+      {/* <PaymentDetails /> */}
       <LandingPageOptinForm
         onSubmit={onSubmit}
         consultationDetails={consultationDetails}
@@ -243,7 +244,7 @@ const OwnEarner = () => {
         // loading={loading}
         // error={error}
       />
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };

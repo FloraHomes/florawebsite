@@ -75,7 +75,7 @@ const App = () => {
           <Route path="/floracity-ecopolis" children={<FloraEcopolis />} />
           <Route path="/design-build-manage" children={<DBM />} />
           <Route path="/affilate" children={<Affilate />} />
-          <Route path="/our-estate" children={<OurEstates />} />
+          {/* <Route path="/our-estate" children={<OurEstates />} /> */}
           <Route path="/estates" children={<Estates />} />
           <Route path="/estate/:name" children={<Estates2 />} />
           <Route path="/optin" children={<OptinForm />} />

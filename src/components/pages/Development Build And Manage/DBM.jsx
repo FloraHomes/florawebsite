@@ -7,6 +7,7 @@ import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import partner from "../../assets/partner2.jpg";
 import PhotoGallery from "../../layouts/PhotoGallery";
 import { galleryData } from "../../../data/photoGrid";
+import Footer from "../../layouts/Footer";
 
 
 
@@ -169,7 +170,7 @@ const DBM = () => {
           </div>
         </div>
       </section>
-      <PaymentDetails />
+      {/* <PaymentDetails /> */}
       <LandingPageOptinForm
         onSubmit={onSubmit}
         consultationDetails={consultationDetails}
@@ -178,7 +179,7 @@ const DBM = () => {
         // loading={loading}
         // error={error}
       />
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };
