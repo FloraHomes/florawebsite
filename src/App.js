@@ -15,7 +15,7 @@ import CompleteBuyer from "./components/pages/CompleteBuyerAndService/CompleteBu
 import Floracity from "./components/pages/FloraCity/Floracity";
 import TheHive from "./components/pages/FloraCity/TheHive";
 import FloraEcopolis from "./components/pages/FloraCity/FloraEcopolis";
-import OurEstates from "./components/pages/OurEstates/OurEstates";
+// import OurEstates from "./components/pages/OurEstates/OurEstates";
 import LagosSetToDigitalize from "./components/pages/BlogDetails.jsx/LagosSetToDemolish/LagosSetToDemolish";
 import KnowYourLandSize from "./components/pages/BlogDetails.jsx/KnowYourLandSize/KnowYourLandSize";
 import KnowYourPropertyTitle from "./components/pages/BlogDetails.jsx/KnowYourPropertyTitle/KnowYourTitle";

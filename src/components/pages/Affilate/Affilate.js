@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import background from "../../assets/background.jpg";
-import PaymentDetails from "../../SharedComponents/PaymentDetails";
+// import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 // import { useDispatch, useSelector } from "react-redux";
 // import makeConsultation from "../../../actions/verificationConsultation";

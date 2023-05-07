@@ -3,7 +3,7 @@ import tawkTo from "tawkto-react";
 // import { useDispatch, useSelector } from "react-redux";
 // import makeConsultation from "../../../actions/verificationConsultation";
 import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
-import PaymentDetails from "../../SharedComponents/PaymentDetails";
+// import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import partner from "../../assets/partner2.jpg";
 import PhotoGallery from "../../layouts/PhotoGallery";
 import { galleryData } from "../../../data/photoGrid";

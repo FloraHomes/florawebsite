@@ -3,7 +3,7 @@ import tawkTo from "tawkto-react";
 import "./style.css";
 import "./own-earner.css";
 import partner from "../../assets/partner2.jpg";
-import PaymentDetails from "../../SharedComponents/PaymentDetails";
+// import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -35,7 +35,7 @@ const OwnEarner = () => {
   useEffect(() => {
     tawkTo(tawkToPropertyId, tawkToKey);
     dispatch(fetchStories());
-  }, []);
+  }, [dispatch]);
 
   const [consultationDetails, setconsultationDetails] = useState({
     full_name: "",

@@ -7,7 +7,7 @@ import customer2 from "../../assets/customers/2.png";
 import customer3 from "../../assets/customers/3.png";
 import customer4 from "../../assets/customers/4.png";
 import verificationImage from "../../assets/verification/ver.png";
-import PaymentDetails from "../../SharedComponents/PaymentDetails";
+// import PaymentDetails from "../../SharedComponents/PaymentDetails";
 import LandingPageOptinForm from "../../SharedComponents/LandingPageOptinForm";
 import EngageInService from "../../SharedComponents/EngageInService";
 // import { useDispatch } from "react-redux";
