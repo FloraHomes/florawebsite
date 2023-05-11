@@ -11,3 +11,7 @@ export const photoGridObj = (images) => {
       }));
 
   }
+
+  export const amountFormat = (num) => {
+    return num?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+};

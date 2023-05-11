@@ -9,7 +9,7 @@ import "../FloraCity/flora.css";
 import background from "../../assets/background.jpg";
 import renderHTML from "react-render-html";
 import { useSelector } from "react-redux";
-import { replaceSpaceWithHyphen } from "../../../utils/format";
+import { amountFormat, replaceSpaceWithHyphen } from "../../../utils/format";
 import { useParams } from "react-router-dom";
 import FloracityCountDown from "../FloraCity/flora-components/FloracityCountDown";
 import ReuseableMainComponent from "../FloraCity/flora-components/ReuseableMainComponent";
@@ -103,6 +103,69 @@ const Estates2 = () => {
                 </p>
               </div>
               <br />
+              {property?.unitsPerPlot && (
+                <>
+                  <div>
+                    <p
+                      style={{
+                        color: "#fff",
+                        fontSize: 20,
+                        lineHeight: "26px",
+                        textAlign: "left",
+                      }}
+                    >
+                      <span className="icon fa fa-bullseye mr-3" />
+                      <strong> Land Size:</strong> {property?.unitsPerPlot} Sqm
+                      per plot
+                    </p>
+                  </div>
+                  <br />
+                </>
+              )}
+              {property?.currentPricePerPlot && property?.unitsPerPlot && (
+                <>
+                  <div>
+                    <p
+                      style={{
+                        color: "#fff",
+                        fontSize: 20,
+                        lineHeight: "26px",
+                        textAlign: "left",
+                      }}
+                    >
+                      <span className="icon fa fa-money mr-3" />
+                      <strong> Price:</strong> &#8358;
+                      {amountFormat(
+                        Math.ceil(
+                          property?.currentPricePerPlot / property?.unitsPerPlot
+                        )
+                      )}{" "}
+                      per sqm
+                    </p>
+                  </div>
+                  <br />
+                </>
+              )}
+
+              {property?.otherFee && (
+                <>
+                  <div>
+                    <p
+                      style={{
+                        color: "#fff",
+                        fontSize: 20,
+                        lineHeight: "26px",
+                        textAlign: "left",
+                      }}
+                    >
+                      <span className="icon fa fa-book mr-3" />
+                      <strong>Other Fee:</strong> &#8358;
+                      {amountFormat(property?.otherFee)}
+                    </p>
+                  </div>
+                  <br />
+                </>
+              )}
               {property?.title && (
                 <>
                   <div>
@@ -116,6 +179,101 @@ const Estates2 = () => {
                     >
                       <span className="icon fa fa-book mr-3" />
                       <strong> Title:</strong> {property?.title}
+                    </p>
+                  </div>
+                  <br />
+                </>
+              )}
+              {property?.otherDocuments && (
+                <>
+                  <div>
+                    <p
+                      style={{
+                        color: "#fff",
+                        fontSize: 20,
+                        lineHeight: "26px",
+                        textAlign: "left",
+                      }}
+                    >
+                      <span className="icon fa fa-book mr-3" />
+                      <strong> Other Documents:</strong>{" "}
+                      {property?.otherDocuments}
+                    </p>
+                  </div>
+                  <br />
+                </>
+              )}
+              {property?.searchParticular && (
+                <>
+                  <div>
+                    <p
+                      style={{
+                        color: "#fff",
+                        fontSize: 20,
+                        lineHeight: "26px",
+                        textAlign: "left",
+                      }}
+                    >
+                      <span className="icon fa fa-book mr-3" />
+                      <strong>Search Particular:</strong>{" "}
+                      {property?.searchParticular}
+                    </p>
+                  </div>
+                  <br />
+                </>
+              )}
+              {property?.planNumber && (
+                <>
+                  <div>
+                    <p
+                      style={{
+                        color: "#fff",
+                        fontSize: 20,
+                        lineHeight: "26px",
+                        textAlign: "left",
+                      }}
+                    >
+                      <span className="icon fa fa-anchor mr-3" />
+                      <strong> Plan Number: </strong>
+                      {property?.planNumber}
+                    </p>
+                  </div>
+                  <br />
+                </>
+              )}
+              {property?.coordinatesUTM && (
+                <>
+                  <div>
+                    <p
+                      style={{
+                        color: "#fff",
+                        fontSize: 20,
+                        lineHeight: "26px",
+                        textAlign: "left",
+                      }}
+                    >
+                      <span className="icon fa fa-anchor mr-3" />
+                      <strong>Coordinates(UTM): </strong>
+                      {property?.coordinatesUTM}
+                    </p>
+                  </div>
+                  <br />
+                </>
+              )}
+              {property?.coordinatesWGS84 && (
+                <>
+                  <div>
+                    <p
+                      style={{
+                        color: "#fff",
+                        fontSize: 20,
+                        lineHeight: "26px",
+                        textAlign: "left",
+                      }}
+                    >
+                      <span className="icon fa fa-anchor mr-3" />
+                      <strong>Coordinates(WGS84): </strong>
+                      {property?.coordinatesWGS84}
                     </p>
                   </div>
                   <br />
@@ -154,26 +312,6 @@ const Estates2 = () => {
                       <span className="icon fa fa-anchor mr-3" />
                       <strong> Insured by: </strong>
                       {property?.insuredBy}
-                    </p>
-                  </div>
-                  <br />
-                </>
-              )}
-
-              {property?.planNumber && (
-                <>
-                  <div>
-                    <p
-                      style={{
-                        color: "#fff",
-                        fontSize: 20,
-                        lineHeight: "26px",
-                        textAlign: "left",
-                      }}
-                    >
-                      <span className="icon fa fa-anchor mr-3" />
-                      <strong> Plan Number: </strong>
-                      {property?.planNumber}
                     </p>
                   </div>
                   <br />

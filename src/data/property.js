@@ -1,22 +1,26 @@
 export const propertyCategories = [
   {
-    name: "Own Earner Property",
-    _id: "own-earner",
+    name: "All Properties",
+    _id: "all",
   },
   {
-    name: "Estate Property",
-    _id: "estate",
+    name: "Own Earner Properties",
+    _id: "Own-earner",
   },
   {
-    name: "Non Estate Property",
-    _id: "non-estate",
+    name: "Estate Properties",
+    _id: "Estate",
   },
   {
-    name: "3rd Party Property",
-    _id: "third-party",
+    name: "Non Estate Properties",
+    _id: "Non-estate",
   },
   {
-    name: "Shortlet",
-    _id: "shortlet",
+    name: "3rd Party Properties",
+    _id: "Third-party",
+  },
+  {
+    name: "Shortlets",
+    _id: "Shortlet",
   },
 ];
