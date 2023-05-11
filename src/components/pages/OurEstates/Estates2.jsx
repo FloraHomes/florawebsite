@@ -133,7 +133,7 @@ const Estates2 = () => {
                         textAlign: "left",
                       }}
                     >
-                      <span className="icon fa fa-money mr-3" />
+                      <span className="icon fa fa-credit-card mr-3" />
                       <strong> Price:</strong> &#8358;
                       {amountFormat(
                         Math.ceil(
@@ -158,7 +158,7 @@ const Estates2 = () => {
                         textAlign: "left",
                       }}
                     >
-                      <span className="icon fa fa-book mr-3" />
+                      <span className="icon fa fa-credit-card mr-3" />
                       <strong>Other Fee:</strong> &#8358;
                       {amountFormat(property?.otherFee)}
                     </p>
@@ -252,7 +252,7 @@ const Estates2 = () => {
                         textAlign: "left",
                       }}
                     >
-                      <span className="icon fa fa-anchor mr-3" />
+                      <span className="icon fa fa-globe mr-3" />
                       <strong>Coordinates(UTM): </strong>
                       {property?.coordinatesUTM}
                     </p>
@@ -271,7 +271,7 @@ const Estates2 = () => {
                         textAlign: "left",
                       }}
                     >
-                      <span className="icon fa fa-anchor mr-3" />
+                      <span className="icon fa fa-globe mr-3" />
                       <strong>Coordinates(WGS84): </strong>
                       {property?.coordinatesWGS84}
                     </p>
@@ -331,7 +331,16 @@ const Estates2 = () => {
               <div className="inner-column">
                 <br />
 
-                <p className="text-center" style={{ marginTop: "10px" }}>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+{property?.features?.length > 0 && (
+  <>
+      <p className="text-center" style={{ marginTop: "10px" }}>
                   <div className="text-center mb-4 mt-4">
                     <FloracityCountDown
                       style={{
@@ -354,74 +363,49 @@ const Estates2 = () => {
                     </span>
                   </button>
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+       <section style={{ backgroundImage: `url(${background})` }}>
+       <div className="auto-container">
+         <div className="row">
+           <div className="col-lg-12 pt-5 pb-5 text-white">
+             <img alt="simple park" src={property?.photo} width="100%" />
+             <br />
+             <br />
+             <br />
 
-      <section style={{ backgroundImage: `url(${background})` }}>
-        <div className="auto-container">
-          <div className="row">
-            <div className="col-lg-12 pt-5 pb-5 text-white">
-              <img alt="simple park" src={property?.photo} width="100%" />
-              <br />
-              <br />
-              <br />
+             <div className="sec-title">
+               <span className="flora-ecopolis">Features &amp; Benefits</span>
+             </div>
 
-              <div className="sec-title">
-                <span className="flora-ecopolis">Features &amp; Benefits</span>
-              </div>
+             <div className="row">
+               {/* Bullet Listing Column */}
+               <div className="affiliate-block col-lg-12 col-md-12">
+                 <ul className="list-style-one flora-list-orange">
+                   {property?.features?.map((feat) => (
+                     <li className="text-white" key={feat.uuid}>
+                       {feat.feature}
+                     </li>
+                   ))}
+                 </ul>
 
-              <div className="row">
-                {/* Bullet Listing Column */}
-                <div className="affiliate-block col-lg-12 col-md-12">
-                  <ul className="list-style-one flora-list-orange">
-                    {property?.features?.map((feat) => (
-                      <li className="text-white" key={feat.uuid}>
-                        {feat.feature}
-                      </li>
-                    ))}
-                  </ul>
+                 <br />
+               </div>
+               <br />
+               <br />
+             </div>
 
-                  <br />
-                </div>
-                <br />
-                <br />
-              </div>
+           
+           </div>
+         </div>
+       </div>
+     </section>
 
-              <p className="text-center" style={{ marginTop: "10px" }}>
-                <div className="btn-box">
-                  <div className="text-center mt-4 mb-4">
-                    <FloracityCountDown
-                      style={{
-                        color: "white",
-                        textAlign: "center",
-                        fontWeight: "bold",
-                        fontSize: "20px",
-                        padding: "2px",
-                        paddingBottom: "10px",
-                      }}
-                    />
-                  </div>
-                  <button
-                    data-toggle="modal"
-                    data-target="#optinForm"
-                    className="theme-btn btn-style-two clickable-modal"
-                  >
-                    <span className="btn-title">
-                      CLICK HERE TO FILL THE INTEREST FORM
-                    </span>
-                  </button>
-                </div>
-              </p>
-              <br />
-            </div>
-          </div>
-        </div>
-      </section>
+     </>
+)}
 
-      {property?.info?.map((inf, index) => (
+{property?.info?.length > 0 && (
+  <>
+  
+  {property?.info?.map((inf, index) => (
         <Fragment key={inf?.uuid}>
           <ReuseableMainComponent
             span={`${letters[index % letters.length]}. `}
@@ -438,40 +422,48 @@ const Estates2 = () => {
       ))}
 
       <br />
+  </>
+)}
+ 
+
       <section>
         <div className="auto-container">
           <div className="row">
-            <div className="col-lg-12 pt-5 pb-5 text-white">
-              <br />
-              <h4 className="faq-heading">
-                <b>
-                  <font color style={{ color: "black!important" }}>
-                    Frequently Asked Questions
-                  </font>
-                </b>
-              </h4>
-              <div
-                className="faq-accordion"
-                style={{ display: "flex", justifyContent: "center" }}
-              >
-                <UncontrolledAccordion
-                  defaultOpen={[]}
-                  stayOpen
-                  style={{ width: "100%" }}
-                >
-                  {property?.faq?.map((fa) => (
-                    <AccordionItem key={fa?.uuid}>
-                      <AccordionHeader targetId={fa?.uuid}>
-                        {fa?.question}
-                      </AccordionHeader>
-                      <AccordionBody accordionId={fa?.uuid}>
-                        <p>{fa?.answer}</p>
-                      </AccordionBody>
-                    </AccordionItem>
-                  ))}
-                </UncontrolledAccordion>
-              </div>
-            </div>
+
+            {property?.faq?.length > 0 && (
+               <div className="col-lg-12 pt-5 pb-5 text-white">
+               <br />
+               <h4 className="faq-heading">
+                 <b>
+                   <font color style={{ color: "black!important" }}>
+                     Frequently Asked Questions
+                   </font>
+                 </b>
+               </h4>
+               <div
+                 className="faq-accordion"
+                 style={{ display: "flex", justifyContent: "center" }}
+               >
+                 <UncontrolledAccordion
+                   defaultOpen={[]}
+                   stayOpen
+                   style={{ width: "100%" }}
+                 >
+                   {property?.faq?.map((fa) => (
+                     <AccordionItem key={fa?.uuid}>
+                       <AccordionHeader targetId={fa?.uuid}>
+                         {fa?.question}
+                       </AccordionHeader>
+                       <AccordionBody accordionId={fa?.uuid}>
+                         <p>{fa?.answer}</p>
+                       </AccordionBody>
+                     </AccordionItem>
+                   ))}
+                 </UncontrolledAccordion>
+               </div>
+             </div>
+            )}
+           
             <p
               className="text-center"
               style={{ marginTop: "10px", marginBottom: 40 }}
