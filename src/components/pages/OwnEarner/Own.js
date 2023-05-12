@@ -34,7 +34,7 @@ const Own = () => {
                       textAlign: "left",
                       lineHeight: "30px",
                     }}
-                    className="mt-3"
+                    className="mt-2"
                   >
                     Our properties listing are genuine and verifiable with
                     plethora of smart land bankers already investing with us.
@@ -52,7 +52,7 @@ const Own = () => {
                   </a>
                 </div>
               </div>
-              <div className="col-lg-6 order-1 order-lg-2 hero-img mb-5">
+              <div className="col-lg-6 order-1 order-lg-2 hero-img mb-2">
                 <img src={bannerImage} alt="banner" className="img-fluid animated"  />
               </div>
             </div>
