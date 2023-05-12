@@ -53,7 +53,7 @@ const Own = () => {
                 </div>
               </div>
               <div className="col-lg-6 order-1 order-lg-2 hero-img mb-5">
-                <img src={bannerImage} className="img-fluid animated" alt />
+                <img src={bannerImage} alt="banner image" className="img-fluid animated"  />
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ const Own = () => {
                   <img
                     src={bodyImage}
                     className="img-fluid"
-                    alt
+                    alt="body image"
                     data-aos="zoom-in"
                   />
                 </div>
