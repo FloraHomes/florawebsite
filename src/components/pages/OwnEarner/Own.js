@@ -68,7 +68,7 @@ const Own = () => {
                   <img
                     src={bodyImage}
                     className="img-fluid"
-                    alt="body"
+                    alt="body fluid"
                     data-aos="zoom-in"
                   />
                 </div>
