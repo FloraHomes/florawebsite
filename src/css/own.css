@@ -41,7 +41,7 @@
   
   @media (max-width: 991px) {
     #hero {
-      height: calc(100vh - 10px);
+      height: calc(110vh);
     }
   
     #hero .animated {
