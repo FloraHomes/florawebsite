@@ -9,7 +9,9 @@ const EstateCard = ({property}) => {
             <Link
               to={`/estate/${replaceSpaceWithHyphen(property?.name)}`}
             >
-              <img src={property?.photo} alt="" />
+              <div style={{height: 300}}>
+              <img src={property?.photo} alt="" style={{maxHeight: "100%", width: "100%"}}/>
+              </div>
             </Link>
           </figure>
         </div>

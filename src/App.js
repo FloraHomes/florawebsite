@@ -35,8 +35,9 @@ import DBM from "./components/pages/Development Build And Manage/DBM";
 import Affilate from "./components/pages/Affilate/Affilate";
 import Estates from "./components/pages/OurEstates/Estates";
 // import EstateDetails from "./components/pages/FloraCity/EstateDetails";
-import OwnEarner from "./components/pages/OwnEarner/OwnEarner";
+// import OwnEarner from "./components/pages/OwnEarner/OwnEarner";
 import Estates2 from "./components/pages/OurEstates/Estates2";
+import Own from "./components/pages/OwnEarner/Own";
 
 const App = () => {
   const myRef = useRef();
@@ -58,7 +59,8 @@ const App = () => {
           <Route path="/contact" children={<Contact />} />
           <Route path="/about" children={<About />} />
           <Route path="/verification" children={<Verification />} />
-          <Route path="/own-earner" children={<OwnEarner />} />
+          <Route path="/own-earner" children={<Own />} />
+          {/* <Route path="/own" children={<Own />} /> */}
           <Route
             path="/verification-detail"
             children={<VerificationDetail />}
@@ -96,6 +98,7 @@ const App = () => {
             children={<ThankYouCommon />}
           />
           <Route component={NotFound} />
+          
         </Switch>
         {/* <Footer /> */}
       </Router>

@@ -24,7 +24,7 @@ const OwnEarner = () => {
   // console.log(stories);
 
   const ownEarnerProperty = properties?.filter(
-    (property) => property?.propertyCategory === "own-earner"
+    (property) => property?.propertyCategory === "Own-earner"
   );
 
   // Direct Chat Link
@@ -152,7 +152,7 @@ const OwnEarner = () => {
             {ownEarnerProperty?.slice(0, 3)?.map((property) => (
               <div
                 key={property?._id}
-                className="news-block col-lg-4 col-md-4 col-sm-12 wow fadeInRight animated"
+                className="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight animated"
                 style={{ visibility: "visible", animationName: "fadeInRight" }}
               >
                 <EstateCard property={property} />
